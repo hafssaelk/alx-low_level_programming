@@ -1,16 +1,3 @@
-/**
- * * _putchar - writes the character c to stdout
- * * @c: The character to print
- *  *
- *   * Return: On success 1.
- *    * On error, -1 is returned, and errno is set appropriately.
- *     */
-nclude <stdio.h>
-
-int main(void) {
-	    printf("_putchar\n");
-	        return 0;
-} 
 #ifndef main_h
 #define main_h
 
