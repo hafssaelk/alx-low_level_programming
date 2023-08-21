@@ -1,10 +1,10 @@
 # include "main.h"
 
 /**
- * _strcpy - copie strings pointed 2 by src into dest.
- * @dest : destination.
- * @src : sources.
- * Return : character avec copi of strings.
+ * _strcpy - copies the string pointed to by src into dest.
+ * @dest: destination
+ * @src: source
+ * Return: char with copy of string
  */
 char *_strcpy(char *dest, char *src)
 {
