@@ -1,28 +1,36 @@
 #include "main.h"
 
 /**
- * _strcpy - Copies a string from source to destination
- * @dest: Destination buffer
- * @src: Source string
+ * main - Entry point
  *
  * Description:
- * This function copies the string pointed to by 'src', including the
- * terminating null byte ('\0'), to the buffer pointed to by 'dest'.
+ * This program demonstrates the usage of the _strcpy function by copying
+ * various strings to destination buffers and printing the results.
  *
- * Return: The pointer to 'dest'
+ * Return: Always 0 (Success)
  */
-char *_strcpy(char *dest, char *src)
+int main(void)
 {
-    char *dest_ptr = dest;
+    char buffer[100];
 
-    while (*src != '\0')
-    {
-        *dest_ptr = *src;
-        dest_ptr++;
-        src++;
-    }
+    // Test regular string
+    _strcpy(buffer, "Holberton!");
+    printf("Correct output: str = \"%s\"\n", buffer);
 
-    *dest_ptr = '\0'; // Add the terminating null byte
+    // Test long string
+    _strcpy(buffer, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+    printf("Correct output: str = \"%s\"\n", buffer);
 
-    return dest;
+    // Test empty string
+    _strcpy(buffer, "");
+    printf("Correct output: str = \"%s\"\n", buffer);
+
+    // Check for null termination
+    _strcpy(buffer, "Hello");
+    if (buffer[_strlen(buffer)] == '\0')
+        printf("Null-terminated: Yes\n");
+    else
+        printf("Null-terminated: No\n");
+
+    return (0);
 }
