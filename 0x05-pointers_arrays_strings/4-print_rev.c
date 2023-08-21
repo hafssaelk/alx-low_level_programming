@@ -1,16 +1,11 @@
 #include "main.h"
 
 /**
- * print_rev - Prints a string in reverse order
- * @s: The string to be printed in reverse
- *
- * Description:
- * This function takes an input string and prints its characters in reverse
- * order. It first calculates the length of the string, then iterates through
- * the characters in reverse order, printing each character until it reaches
- * the beginning of the string. Finally, it adds a newline character to the
- * output to move to the next line.
+ * print_reve - print the  string backward .
+ * @s : string .
+ * Return : void .
  */
+
 void print_rev(char *s)
 {
     int i = 0;
