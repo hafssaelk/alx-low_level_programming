@@ -1,8 +1,8 @@
 # include "main.h"
 
 /**
- * puts_half - print half of the string 
- * @str : input string 
+ * puts_half - print half of the string
+ * @str : input string
  * Return : no retur
  */
 
