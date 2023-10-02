@@ -2,11 +2,13 @@
 #include <stdio.h>
 
 /**
- * error_file - checks if files can be opened.
- * @file_from: file_from.
- * @file_to: file_to.
- * @argv: arguments vector.
- * Return: no return.
+ * error_file - Checks if files can be opened and handles errors.
+ * @file_from: The file descriptor for the source file.
+ * @file_to: The file descriptor for the destination file.
+ * @argv: The arguments vector.
+ *
+ * This function checks if files can be opened and exits with appropriate error
+ * messages if there are any issues.
  */
 void error_file(int file_from, int file_to, char *argv[])
 {
@@ -23,9 +25,10 @@ void error_file(int file_from, int file_to, char *argv[])
 }
 
 /**
- * main - check the code for Holberton School students.
- * @argc: number of arguments.
- * @argv: arguments vector.
+ * main - Entry point for the "cp" program.
+ * @argc: The number of arguments.
+ * @argv: The array of command-line argument strings.
+ *
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
